@@ -1,0 +1,17 @@
+#header .header-shadow {
+    height: 260.5px;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: linear-gradient(32.93deg, #009367 5.18%, rgba(0, 147, 103, 0.4) 101.22%);
+    opacity: 0.15;
+    border-top-right-radius: 40px;
+    z-index: 1;
+}
+#header .header-about-img {
+    height: 692px;
+    width: 556px;
+    right: 0px;
+    object-fit: cover;
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .inline-flex-col-center {
+        @apply inline-flex flex-col justify-center items-center;
+    }
+    .block-flex-col-center {
+        @apply flex flex-col justify-center items-center;
+    }
+    .inline-flex-row-center {
+        @apply inline-flex flex-row justify-center items-center;
+    }
+    .block-flex-row-center {
+        @apply flex flex-row justify-center items-center;
+    }
+}
+
+@layer utilities {
+    html {
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: #FDFEFF;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+    @media (max-width: 640px) {
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    a, button {
+        cursoir: pointer;
+    }
+    input:focus, select:focus  {
+        outline: none;
+    }
+}

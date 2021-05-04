@@ -1,0 +1,10 @@
+#article-container {
+    width: calc(100% - 407px);
+}
+#aside {
+    width: 407px;
+    background-color: #FDFEFF;
+    border: 1px solid #BBBCBD;
+    box-shadow: 10px 10px 40px rgba(100, 100, 100, 0.04);
+    border-radius: 8px;
+}
