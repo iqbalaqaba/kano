@@ -27,7 +27,6 @@
         position: relative;
         background-color: #FDFEFF;
         font-family: 'Inter', sans-serif;
-        font-family: 'Open Sans', sans-serif;
     }
     @media (max-width: 640px) {
         body {
@@ -35,7 +34,7 @@
         }
     }
     a, button {
-        cursoir: pointer;
+        cursor: pointer;
     }
     input:focus, select:focus  {
         outline: none;
