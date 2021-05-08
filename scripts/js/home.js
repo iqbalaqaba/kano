@@ -1,7 +1,7 @@
 // SWIPER 1 INIT: "CATEGORY"
 const swiperCategory = new Swiper('#swiper-category', {
     slidesPerView: 'auto',
-    spaceBetween: 16,
+    spaceBetween: 32,
     loop: false,
     navigation: {
         nextEl: '.swiper-button-next-category',

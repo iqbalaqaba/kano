@@ -79,10 +79,10 @@
         @apply bg-black-3;
     }
     .footer-kanoo-col-primary {
-        @apply w-full md:w-1/4 md:pr-8 mb-18px md:mb-0;
+        @apply w-full md:w-full lg:w-1/4 md:pr-8 mb-18px md:mb-24px lg:mb-0;
     }
     .footer-kanoo-col-secondary {
-        @apply w-full md:w-1/4 md:px-4 mb-18px md:mb-0;
+        @apply w-full md:w-4/12 lg:w-1/4 md:px-0 lg:px-4 mb-18px md:mb-0;
     }
     .footer-kanoo-title {
         @apply mb-24px font-semibold text-24px text-black-100;
@@ -91,10 +91,13 @@
         @apply flex items-center mb-16px font-semibold text-20px text-black-70;
     }
     .footer-kanoo-text {
-        @apply mb-24px text-20px leading-34px text-black-100;
+        @apply md:mb-18px lg:mb-24px text-20px leading-34px text-black-100;
     }
     .footer-kanoo-copyright {
         @apply font-semibold text-16px text-black-50;
+    }
+    .footer-kanoo-link-selengkapnya {
+        @apply font-semibold text-16px md:text-20px text-oren-100;
     }
 }
 
