@@ -3,7 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/iqbalaqaba/kano.svg)
 
 ## Tutorials
-Gulp : https://gulpjs.com/docs/en/getting-started/quick-start/
+Gulp : https://gulpjs.com/docs/en/getting-started/quick-start/       
 Nunjucks docs : https://mozilla.github.io/nunjucks/
 
 ## Tools
