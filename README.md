@@ -1,6 +1,5 @@
 # Kanno.ID website front-end repo
 ![Dependencies](https://david-dm.org/iqbalaqaba/kano.svg)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/iqbalaqaba/kano.svg)
 
 ## Tutorials
