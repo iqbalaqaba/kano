@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- CALL: ICON -->
+    <link rel="icon" href="../assets/images/logo.png" type="image/gif" sizes="16x16">
+    <!-- CALL: TAILWIND -->
+    <link rel="stylesheet" href="../styles/css/dist/tailwind.css">
+    <!-- CALL: GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        #header {
+            background-color: #00CA8D;
+            position: relative;
+            padding-top: 96px;
+            overflow-y: hidden;
+        }
+        #header .row-flex-kanoo {
+            flex-wrap: wrap;
+        }
+        #header .header-title {
+            margin-bottom: 29px;
+            font-weight: 700;
+            font-size: 40px;
+            color: #FDFEFF;
+            line-height: 60px;
+        }
+        #header .header-text {
+            font-size: 20px;
+            line-height: 34px;
+            color: #FDFEFF;
+            padding-right: 11%;
+        }
+        #header .header-link {
+            display: inline-block;
+            font-weight: 6000;
+            font-size: 16px;
+            color: #FDFEFF;
+            border: 1.5px solid #FDFEFF;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-right: 20px;
+            margin-bottom: 16px;
+        }
+        #header .header-category-image {
+            position: absolute;
+            width: 57%;
+            right: 0px;
+            object-fit: cover;
+        }
+        @media(max-width: 768px) {
+            #header .header-category-image {
+                position: absolute;
+                width: 100%;
+                right: 0px;
+                object-fit: cover;
+            }
+            #header .header-text {
+                font-size: 20px;
+                padding-right: 0px;
+            }
+        }
+        .shadow-blog-card {
+            box-shadow: 10px 10px 40px rgba(100, 100, 100, 0.04);
+        }
+        #cat::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 2px 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav" class="nav-kanoo">
+        <div class="container-kanoo">
+            <div class="nav-kanoo-row">
+                <div class="nav-kanoo-col-left">
+                    <button id="nav-button" type="button" name="button-nav" class="text-black-100 p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-32px w-32px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-kanoo-col-center">
+                    <a href="#">
+                        <img class=" nav-kanoo-col-center-icon" src="../../assets/images/icon-kanoo-nav.png" alt="#">
+                    </a>
+                </div>
+                <div class="nav-kanoo-col-right">
+                    <a href="#" class="nav-kanoo-link-text">Company</a>
+                    <a href="#" class="nav-kanoo-link-text">Service</a>
+                    <a href="#" class="nav-kanoo-link-text">Testimoni</a>
+                    <a href="#" class="nav-kanoo-link-text">Blog</a>
+                    <a href="#" class="nav-kanoo-link-text">Bantuan</a>
+                    <a href="#" class="nav-kanoo-link-login">Login</a>
+                    <a href="#" class="nav-kanoo-link-form">Form</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV LEFT -->
+    <aside class="nav-left-kanoo">
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text">Company</a>
+            <a href="#" class="nav-left-kanoo-link-text">Service</a>
+            <a href="#" class="nav-left-kanoo-link-text">Testimoni</a>
+            <a href="#" class="nav-left-kanoo-link-text">Blog</a>
+            <a href="#" class="nav-left-kanoo-link-text">Bantuan</a>
+        </div>
+        <div class="border-b border-black-10 my-24px"></div>
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text-login">Login</a>
+        </div>
+    </aside>
+    <!-- COVER BODY: MODAL -->
+    <div class="kanoo-cover-body"></div>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo">
+                <div class="w-full md:w-1/2 py-16 md:py-20">
+                    <h1 class="header-title">UI/UX Design</h1>
+                    <a href="#" class="header-link">Website UI</a>
+                    <a href="#" class="header-link">Mobile UI Design</a>
+                    <a href="#" class="header-link">UX Research</a>
+                    <a href="#" class="header-link">UX Design</a>
+                    <a href="#" class="header-link">Visual Design</a>
+                    <a href="#" class="header-link">Interaction Design</a>
+                    <a href="#" class="header-link">20+</a>
+                </div>
+                <div class="hidden md:block w-full md:w-1/2">
+                    <img class="header-category-image" src="../assets/images/category-header.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-kanoo mt-20">
+        <div class="lg:flex lg:space-x-10">
+            <!-- judul blog -->
+            <div class="self-start grid lg:grid-cols-2 gap-10 lg:w-7/12">
+              <!-- card blog -->
+              <div class="shadow-blog-card px-5 py-6 rounded-8px">
+                <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
+                <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://placekitten.com/100/100" class="w-56px h-56px rounded-full">
+                    <div class="text-14px text-black-50">
+                        Dibuat oleh <span class="font-semibold text-black-100">Author</span> pada hari ini
+                        <p class="font-semibold text-black-100">17:58</p>
+                    </div>
+                </div>
+                <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
+              </div>
+              <div class="shadow-blog-card px-5 py-6 rounded-8px">
+                <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
+                <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://placekitten.com/100/100" class="w-56px h-56px rounded-full">
+                    <div class="text-14px text-black-50">
+                        Dibuat oleh <span class="font-semibold text-black-100">Author</span> pada hari ini
+                        <p class="font-semibold text-black-100">17:58</p>
+                    </div>
+                </div>
+                <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
+              </div>
+            </div>
+            <div class="lg:w-5/12 mt-16 lg:mt-0" style="max-width: 484px;">
+              <!-- subscribe -->
+              <div class="self-start bg-black-10 rounded-16px text-center py-10 mb-10">
+                <h1 class="text-32px text-black-100 leading-48px font-bold mb-5 px-24">Subscribe ke Mailing List Kami.</h1> 
+                <form action="#" class="px-10">
+                    <input type="email" placeholder="Masukkan email" name="email" id="email" class="rounded-4px p-3 w-full"> <br><br>
+                    <button type="submit" class="bg-oren-100 text-white px-10 py-3 rounded-md">Berlangganan</button>
+                </form>
+              </div>
+              <!-- judul -->
+              <div class="flex items-center space-x-6 mb-6">
+                  <div class="w-5/12">
+                      <img src="https://placekitten.com/200/150" class="rounded-8px w-full" style="max-width: 200px;">
+                  </div>
+                  <div class="w-7/12">
+                      <h1 class="font-bold text-24px pb-2">Judul Blog</h1>
+                      <div class="text-black-50 text-20px flex items-center">
+                        <span id="cat">Kategori</span>
+                        <span>29 Apr 2021</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="flex items-center space-x-6 mb-6">
+                  <div class="w-5/12">
+                      <img src="https://placekitten.com/200/150" class="rounded-8px w-full" style="max-width: 200px;">
+                  </div>
+                  <div class="w-7/12">
+                      <h1 class="font-bold text-24px pb-2">Judul Blog</h1>
+                      <div class="text-black-50 text-20px flex items-center">
+                        <span id="cat">Kategori</span>
+                        <span>29 Apr 2021</span>
+                      </div>
+                  </div>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+</body>
+</html>
