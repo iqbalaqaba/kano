@@ -1,5 +1,5 @@
 # Kanno.ID website front-end repo
-![Dependencies](https://david-dm.org/iqbalaqaba/kano.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9e8684d5-645c-4a7b-b87a-607ed1e68316/deploy-status)](https://app.netlify.com/sites/kanno-preview/deploys)
 ![GitHub last commit](https://img.shields.io/github/last-commit/iqbalaqaba/kano.svg)
 
 ## Tutorials
