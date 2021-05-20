@@ -1,5 +1,5 @@
 #header {
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     position: relative;
     padding-top: 96px;
     overflow-y: hidden;
@@ -34,7 +34,7 @@
     border-radius: 4px;
     position: relative;
     z-index: 5;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     font-weight: 600;
     font-size: 20px;
     color: #FDFEFF;
@@ -64,7 +64,7 @@
     position: absolute;
     left: 0px;
     bottom: 0px;
-    background: linear-gradient(32.93deg, #009367 5.18%, rgba(0, 147, 103, 0.4) 101.22%);
+    background: linear-gradient(32.93deg, #DE6B00 5.18%, rgba(222, 107, 0, 0.4) 101.22%);
     opacity: 0.15;
     border-top-right-radius: 40px;
     z-index: 1;
@@ -294,7 +294,7 @@
 #blog-post-section .section-title-link {
     font-weight: 600;
     font-size: 28px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 #blog-post-section .row-grid-kanoo {
     grid-template-columns: calc(33.33% - 6.667px) calc(33.33% - 6.667px) calc(33.33% - 6.667px);
@@ -367,7 +367,7 @@
 #cari-service-section .row-block-kanoo {
     padding: 80px 0px;
     text-align: center;
-    background-color: #E4F9F4;
+    background-color: #F9F8EC;
 }
 #cari-service-section .cari-service-icon {
     height: 65px;
@@ -376,7 +376,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     margin-bottom: 24px;
 }
 #cari-service-section .service-title {
@@ -396,7 +396,7 @@
     font-weight: 600;
     font-size: 20px;
     color: #FDFEFF;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
 }
 @media (max-width: 768px) {
     #cari-service-section .cari-service-icon {
@@ -428,4 +428,8 @@
         width: 150px;
         font-size: 14px;
     }
+}
+
+.footer-kanoo-link-selengkapnya {
+    color: #EA3AA1 !important;
 }
