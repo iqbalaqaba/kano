@@ -7,10 +7,10 @@ body {
     padding-bottom: 80px;
 }
 
-.cover-green {
+.cover-yellow {
     height: 470px;
     width: 100%;
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     position: absolute;
     top: 0;
 }
@@ -64,11 +64,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #FF8845;
+    border: 1px solid #EA3AA1;
     border-radius: 4px;
     font-weight: 600;
     font-size: 20px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 .aside-title-text {
     font-weight: 600;
@@ -78,7 +78,7 @@ body {
 .aside-button-edit {
     font-weight: 600;
     font-size: 20px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 .aside-description-area {
     width: 100%;
@@ -99,7 +99,7 @@ body {
     border-radius: 15px;
     font-weight: 600;
     font-size: 16px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 
 
@@ -135,12 +135,12 @@ body {
 .statistic-value {
     font-weight: 600;
     font-size: 32px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 .section-button-text {
     font-weight: 600;
     font-size: 20px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 .section-order-header {
     width: 100%;
@@ -215,7 +215,7 @@ body {
     width: 100%;
     display: inline-flex;
     justify-content: center;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     align-items: center;
     border-radius: 4px;
     font-weight: 600;
@@ -247,5 +247,5 @@ body {
 .service-list-edit {
     font-weight: 600;
     font-size: 20px;
-    color: #FF8845;
+    color: #EA3AA1;
 }

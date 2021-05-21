@@ -1,5 +1,5 @@
 #header {
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     position: relative;
     padding-top: 96px;
     overflow-y: hidden;
@@ -61,7 +61,22 @@
     padding: 20px 30px;
     border-radius: 16px;
 }
-#search-keyword::placeholder {
+#form-aside .form-aside-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222222;
+}
+#form-aside .form-search-keywords {
+    height: 56px;
+    width: 100%;
+    background-color: #FDFEFF;
+    font-size: 20px;
+    color: #BBBCBD;
+    border: 1px solid #EA3AA1;
+    border-radius: 8px;
+}
+#form-aside .form-search-keywords::placeholder {
     color: #BBBCBD;
 }
 #form-aside label {
@@ -80,8 +95,8 @@
     color: transparent;
 }
 #form-aside .checkbox-box-active {
-    background-color: #FF8845 !important;
-    border: 1px solid #FF8845 !important;
+    background-color: #EA3AA1 !important;
+    border: 1px solid #EA3AA1 !important;
     color: #FDFEFF !important;
 }
 #form-aside .form-custom-checkbox-text {
@@ -104,7 +119,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     border: 3px solid #FDFEFF;
     cursor: pointer;
     transform: scale(1.6);
@@ -113,7 +128,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     border: 3px solid #FDFEFF;
     cursor: pointer;
     transform: scale(1.2);
@@ -151,8 +166,8 @@
     background-color: #FDFEFF;
     font-weight: 600;
     font-size: 14px;
-    color: #FF8845;
-    border: 1px solid #FF8845;
+    color: #EA3AA1;
+    border: 1px solid #EA3AA1;
     border-radius: 4px;
     padding: 8px 36px 8px 16px !important;
 }
@@ -204,7 +219,7 @@
 }
 #main .article-price {
     display: inline-block;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     padding: 8px 24px;
     border-radius: 4px;
     font-weight: 600;
@@ -225,7 +240,7 @@
     font-size: 14px;
     color: #FDFEFF;
     padding: 10px 16px;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     border-radius: 4px;
 }
 #main .pagination-link {

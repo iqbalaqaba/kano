@@ -23,7 +23,7 @@
 
 #header {
     position: relative;
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     padding-top: 96px;
 }
 #header .row-flex-kanoo {
@@ -56,14 +56,23 @@
 }
 #header .form-button {
     height: 56px;
-    background-color: #FF8845;
-    border: 1px solid #FF8845;
+    background-color: #EA3AA1;
+    border: 1px solid #EA3AA1;
     font-weight: 600;
     font-size: 20px;
     color: #FDFEFF;
     border-radius: 4px;
     margin-left: 30px;
     padding: 0px 60px;
+}
+#header .header-left-shadow {
+    height: 187px;
+    width: 613px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(180deg, #DE6B00 0%, rgba(222, 107, 0, 0) 100%);
+    opacity: 0.2;
 }
 #header .header-right {
     width: 50%;
@@ -96,7 +105,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    background: linear-gradient(32.93deg, #009367 5.18%, rgba(0, 147, 103, 0.4) 101.22%);
+    background: linear-gradient(32.93deg, #DE6B00 5.18%, rgba(222, 107, 0, 0.4) 101.22%);
     opacity: 0.15;
     border-radius: 0px 0px 0px 40px;
 }
@@ -127,7 +136,7 @@
     align-items: center;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #FDF2EC;
+    background-color: #FFF2FB;
 }
 #category-hightlights .category-swiper-container {
     padding-left: 5%;
@@ -187,7 +196,7 @@
     line-height: 34px;
 }
 #feature-highlights .feature-active {
-    background-color: #FF8845 !important;
+    background-color: #EA3AA1 !important;
     color: #FDFEFF !important;
 }
 #feature-highlights .feature-active .feature-title, #feature-highlights .feature-active .feature-text {
@@ -206,7 +215,7 @@
     justify-content: center;
     position: absolute;
     border-radius: 16px;
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
 }
 #feature-highlights .icon-above-image-secondary {
     height: 84px;
@@ -265,7 +274,7 @@
 }
 
 #freelance-list {
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     padding: 80px 0px;
 }
 #freelance-list .row-flex-kanoo {
@@ -321,9 +330,14 @@
     font-size: 14px;
     color: #FDFEFF;
     border-radius: 4px;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     margin: 0.25rem 0px;
     padding: 0.5rem 2rem;
+}
+
+#client-kami {
+    background-color: #f8f8f8;
+    padding: 56px 0px;
 }
 
 #client-testimonial {
@@ -344,7 +358,7 @@
     position: relative;
     color: #FDFEFF;
     border-radius: 24px;
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     padding: 48px;
 }
 #client-testimonial .swiper-pagination-bullet {
@@ -353,7 +367,16 @@
     margin-left: 12px;
 }
 #client-testimonial .swiper-pagination-bullet-active {
-    background-color: #FF8845;
+    background-color: #EA3AA1;
+}
+#client-testimonial .swiper-button-prev-testimonial, #client-testimonial .swiper-button-next-testimonial {
+    height: 56px;
+    width: 56px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
 }
 #client-testimonial .swiper-user-image {
     height: 72px;
@@ -382,7 +405,7 @@
 #blog-post-section .section-title-link {
     font-weight: 600;
     font-size: 28px;
-    color: #FF8845;
+    color: #EA3AA1;
 }
 #blog-post-section .row-grid-kanoo {
     grid-template-columns: calc(33.33% - 6.667px) calc(33.33% - 6.667px) calc(33.33% - 6.667px);
@@ -447,7 +470,8 @@
 #cari-service-section .row-block-kanoo {
     padding: 80px 0px;
     text-align: center;
-    background-color: #E4F9F4;
+    background-color: #F9F8EC;
+    border-radius: 16px;
 }
 #cari-service-section .cari-service-icon {
     height: 65px;
@@ -456,7 +480,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     margin-bottom: 24px;
 }
 #cari-service-section .service-title {
@@ -476,7 +500,7 @@
     font-weight: 600;
     font-size: 20px;
     color: #FDFEFF;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
 }
 @media (max-width: 768px) {
     #cari-service-section .cari-service-icon {
