@@ -30,7 +30,7 @@ function folder(){
 var COMPILE = {
   SRC: './app/pages/**/*.+(html|njk)',
   TMP: './app/template/',
-  DST: './app/'
+  DST: './app/html'
 };
 
 //dir
@@ -78,7 +78,7 @@ function watching() {
             extensions: ['html']
         }
       },
-      startPath: 'app/index',
+      startPath: 'app/html',
       port: 3000
   });
 
