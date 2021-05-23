@@ -12,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: #f8f8f8;
+        }
         #header {
-            background-color: #00CA8D;
+            background-color: #D9BF3F;
             position: relative;
             padding-top: 96px;
             overflow-y: hidden;
@@ -68,12 +71,12 @@
         }
         #cat::after {
             content: '';
-            width: 10px;
-            height: 10px;
+            width: 7px;
+            height: 7px;
             background-color: #ccc;
             border-radius: 50%;
             display: inline-block;
-            margin: 2px 16px;
+            margin: 2px 10px;
         }
     </style>
 </head>
@@ -126,15 +129,16 @@
     <header id="header">
         <div class="container-kanoo">
             <div class="row-flex-kanoo">
-                <div class="w-full md:w-1/2 py-16 md:py-20">
-                    <h1 class="header-title">UI/UX Design</h1>
-                    <a href="#" class="header-link">Website UI</a>
-                    <a href="#" class="header-link">Mobile UI Design</a>
-                    <a href="#" class="header-link">UX Research</a>
-                    <a href="#" class="header-link">UX Design</a>
-                    <a href="#" class="header-link">Visual Design</a>
-                    <a href="#" class="header-link">Interaction Design</a>
-                    <a href="#" class="header-link">20+</a>
+                <div class="w-full md:w-1/2 py-16 md:py-14">
+                    <div class="mb-4">
+                        <p class="bg-white bg-opacity-30 text-white text-center rounded-16px py-2 w-36">Kategori Blog</p>
+                    </div>
+                    <div class="mb-6">
+                        <h1 class="text-white font-bold text-40px">Proses Kinerja Tim Product Development di Startup</h1>
+                    </div>
+                    <p class="text-20px text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt sed do elusmod tempor.
+                    </p>
                 </div>
                 <div class="hidden md:block w-full md:w-1/2">
                     <img class="header-category-image" src="../assets/images/category-header.png" alt="#">
@@ -145,9 +149,9 @@
     <div class="container-kanoo mt-20">
         <div class="lg:flex lg:space-x-10">
             <!-- judul blog -->
-            <div class="self-start grid lg:grid-cols-2 gap-10 lg:w-7/12">
+            <div class="self-start grid lg:grid-cols-2 gap-10 lg:w-8/12">
               <!-- card blog -->
-              <div class="shadow-blog-card px-5 py-6 rounded-8px">
+              <div class="shadow-blog-card bg-white px-5 py-6 rounded-8px">
                 <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
                 <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
                 <div class="flex items-center space-x-4 mb-4">
@@ -159,7 +163,7 @@
                 </div>
                 <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
               </div>
-              <div class="shadow-blog-card px-5 py-6 rounded-8px">
+              <div class="shadow-blog-card bg-white px-5 py-6 rounded-8px">
                 <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
                 <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
                 <div class="flex items-center space-x-4 mb-4">
@@ -172,10 +176,10 @@
                 <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
               </div>
             </div>
-            <div class="lg:w-5/12 mt-16 lg:mt-0" style="max-width: 484px;">
+            <div class="lg:w-4/12 mt-16 lg:mt-0">
               <!-- subscribe -->
               <div class="self-start bg-black-10 rounded-16px text-center py-10 mb-10">
-                <h1 class="text-32px text-black-100 leading-48px font-bold mb-5 px-24">Subscribe ke Mailing List Kami.</h1> 
+                <h1 class="text-24px text-black-100 font-bold mb-5 px-24">Subscribe ke Mailing List Kami.</h1> 
                 <form action="#" class="px-10">
                     <input type="email" placeholder="Masukkan email" name="email" id="email" class="rounded-4px p-3 w-full"> <br><br>
                     <button type="submit" class="bg-oren-100 text-white px-10 py-3 rounded-md">Berlangganan</button>
@@ -187,8 +191,8 @@
                       <img src="https://placekitten.com/200/150" class="rounded-8px w-full" style="max-width: 200px;">
                   </div>
                   <div class="w-7/12">
-                      <h1 class="font-bold text-24px pb-2">Judul Blog</h1>
-                      <div class="text-black-50 text-20px flex items-center">
+                      <h1 class="font-bold text-20px pb-2">Judul Blog</h1>
+                      <div class="text-black-50 text-16px flex items-center">
                         <span id="cat">Kategori</span>
                         <span>29 Apr 2021</span>
                       </div>
@@ -199,8 +203,8 @@
                       <img src="https://placekitten.com/200/150" class="rounded-8px w-full" style="max-width: 200px;">
                   </div>
                   <div class="w-7/12">
-                      <h1 class="font-bold text-24px pb-2">Judul Blog</h1>
-                      <div class="text-black-50 text-20px flex items-center">
+                      <h1 class="font-bold text-20px pb-2">Judul Blog</h1>
+                      <div class="text-black-50 text-216x flex items-center">
                         <span id="cat">Kategori</span>
                         <span>29 Apr 2021</span>
                       </div>
