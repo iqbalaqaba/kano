@@ -3,6 +3,7 @@
 !/.yarn/cache
 #/.pnp.*
 
+*.DS_Store
 node_modules/
 .yarn/
 *.log
