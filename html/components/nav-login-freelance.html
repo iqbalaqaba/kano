@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="author" content="#">
+    <title>Components</title>
+    <!-- CALL: ICON -->
+    <link rel="icon" href="../../assets/images/logo.png" type="image/gif" sizes="16x16">
+    <!-- CALL: TAILWIND -->
+    <link rel="stylesheet" href="../../styles/css/dist/tailwind.css">
+    <!-- CALL: GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+    <!-- NAV -->
+    <nav id="nav" class="nav-kanoo">
+        <div class="container-kanoo">
+            <div class="nav-kanoo-row">
+                <div class="nav-kanoo-col-left">
+                    <button id="nav-button" type="button" name="button-nav" class="text-black-100 p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-32px w-32px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-kanoo-col-center">
+                    <a href="#">
+                        <img class=" nav-kanoo-col-center-icon" src="../../assets/images/icon-kanoo-nav.png" alt="#">
+                    </a>
+                </div>
+                <div class="nav-kanoo-col-right">
+                    <a href="#" class="nav-kanoo-link-text">Dashboard</a>
+                    <a href="#" class="nav-kanoo-link-text">Orders</a>
+                    <a href="#" class="nav-kanoo-link-text">My Services</a>
+                    <a href="#" class="nav-kanoo-link-text">Income Statistic</a>
+                    <button type="button" class="nav-kanoo-link-profile">
+                        <div>
+                            <img class="nav-kanoo-link-profile-image" src="../../assets/images/user.png" alt="#">
+                        </div>
+                        <div class="nav-kanoo-link-profile-name">
+                            <strong class="nav-kanoo-link-profile-name-text">Putri Rahma</strong>
+                        </div>
+                        <div class="nav-kanoo-link-profile-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0002 15.5C11.8686 15.5008 11.7381 15.4755 11.6163 15.4258C11.4944 15.376 11.3836 15.3027 11.2902 15.21L7.29019 11.21C7.19695 11.1168 7.12299 11.0061 7.07253 10.8843C7.02207 10.7624 6.99609 10.6319 6.99609 10.5C6.99609 10.3681 7.02207 10.2376 7.07253 10.1158C7.12299 9.99393 7.19695 9.88324 7.29019 9.79C7.38342 9.69676 7.49411 9.6228 7.61594 9.57234C7.73776 9.52188 7.86833 9.49591 8.00019 9.49591C8.13204 9.49591 8.26261 9.52188 8.38444 9.57234C8.50626 9.6228 8.61695 9.69676 8.71019 9.79L12.0002 13.1L15.3002 9.92C15.3922 9.81771 15.5043 9.7355 15.6295 9.67852C15.7547 9.62153 15.8903 9.59099 16.0279 9.58881C16.1654 9.58664 16.302 9.61286 16.4289 9.66585C16.5559 9.71884 16.6705 9.79746 16.7657 9.89678C16.8609 9.99611 16.9346 10.114 16.9821 10.2431C17.0297 10.3722 17.0501 10.5097 17.042 10.647C17.034 10.7844 16.9977 10.9186 16.9355 11.0413C16.8732 11.1639 16.7863 11.2724 16.6802 11.36L12.6802 15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV LEFT -->
+    <aside class="nav-left-kanoo">
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text">Dashboard</a>
+            <a href="#" class="nav-left-kanoo-link-text">Orders</a>
+            <a href="#" class="nav-left-kanoo-link-text">My Services</a>
+            <a href="#" class="nav-left-kanoo-link-text">Blog</a>
+            <a href="#" class="nav-left-kanoo-link-text">Bantuan</a>
+        </div>
+        <div class="border-b border-black-10 my-24px"></div>
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text-login">Logout</a>
+        </div>
+    </aside>
+    <!-- COVER BODY: MODAL -->
+    <div class="kanoo-cover-body"></div>
+    <!-- CALL: jQUERY -->
+    <script src="../../scripts/js/jquery-3.5.1.min.js"></script>
+    <!-- TEST: JAVASCRIPT -->
+    <script>
+        function openLeftNav() {
+            $('.kanoo-cover-body').addClass('kanoo-cover-body-acitve');
+            $('.nav-left-kanoo').css({'transform': 'translateX(0%)'});
+        }
+        function closeLeftNav() {
+            $('.kanoo-cover-body').removeClass('kanoo-cover-body-acitve');
+            $('.nav-left-kanoo').css({'transform': 'translateX(-100%)'});
+        }
+        $('#nav-button').on('click', function() {
+            openLeftNav();
+        });
+        $('.kanoo-cover-body').on('click', function() {
+            closeLeftNav();
+        });
+    </script>
+</body>
+</html>
