@@ -1,5 +1,5 @@
 #header {
-    background-color: #00CA8D;
+    background-color: #D9BF3F;
     position: relative;
     padding-top: 96px;
     overflow-y: hidden;
@@ -56,20 +56,35 @@
 }
 
 #form-aside {
-    width: 400px;
+    width: 360px;
     background-color: rgba(231, 232, 233, 0.3);
     padding: 20px 30px;
     border-radius: 16px;
 }
-#search-keyword::placeholder {
+#form-aside .form-aside-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #222222;
+}
+#form-aside .form-search-keywords {
+    height: 48px;
+    width: 100%;
+    background-color: #FDFEFF;
+    font-size: 16px;
+    color: #BBBCBD;
+    border: 1px solid #EA3AA1;
+    border-radius: 8px;
+}
+#form-aside .form-search-keywords::placeholder {
     color: #BBBCBD;
 }
 #form-aside label {
     cursor: pointer;
 }
 #form-aside .form-custom-checkbox-box {
-    height: 28px;
-    width: 28px;
+    height: 24px;
+    width: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,8 +95,8 @@
     color: transparent;
 }
 #form-aside .checkbox-box-active {
-    background-color: #FF8845 !important;
-    border: 1px solid #FF8845 !important;
+    background-color: #EA3AA1 !important;
+    border: 1px solid #EA3AA1 !important;
     color: #FDFEFF !important;
 }
 #form-aside .form-custom-checkbox-text {
@@ -104,7 +119,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     border: 3px solid #FDFEFF;
     cursor: pointer;
     transform: scale(1.6);
@@ -113,7 +128,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     border: 3px solid #FDFEFF;
     cursor: pointer;
     transform: scale(1.2);
@@ -122,18 +137,9 @@
     height: 10px;
     border-radius: 40px;
 }
-@media(max-width: 768px) {
-    #form-aside {
-        width: 100%;
-        background-color: rgba(231, 232, 233, 0.3);
-        padding: 20px 30px;
-        border-radius: 16px;
-        margin-bottom: 60px;
-    }
-}
 
 #main {
-    width: calc(100% - 400px);
+    width: calc(100% - 360px);
     padding-left: 40px;
 }
 #main .main-sortby {
@@ -151,8 +157,8 @@
     background-color: #FDFEFF;
     font-weight: 600;
     font-size: 14px;
-    color: #FF8845;
-    border: 1px solid #FF8845;
+    color: #EA3AA1;
+    border: 1px solid #EA3AA1;
     border-radius: 4px;
     padding: 8px 36px 8px 16px !important;
 }
@@ -204,7 +210,7 @@
 }
 #main .article-price {
     display: inline-block;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     padding: 8px 24px;
     border-radius: 4px;
     font-weight: 600;
@@ -225,7 +231,7 @@
     font-size: 14px;
     color: #FDFEFF;
     padding: 10px 16px;
-    background-color: #FF8845;
+    background-color: #EA3AA1;
     border-radius: 4px;
 }
 #main .pagination-link {
@@ -239,11 +245,11 @@
 }
 @media (max-width: 1150px) {
     #form-aside {
-        width: 350px;
+        width: 330px;
         padding: 20px 30px;
     }
     #main {
-        width: calc(100% - 350px);
+        width: calc(100% - 330px);
         padding-left: 30px;
     }
     #main #main-article-container {
@@ -285,5 +291,14 @@
     #main .pagination-link {
         padding: 4px 8px;
         font-size: 14px;
+    }
+}
+@media(max-width: 768px) {
+    #form-aside {
+        width: 100%;
+        background-color: rgba(231, 232, 233, 0.3);
+        padding: 20px 30px;
+        border-radius: 16px;
+        margin-bottom: 60px;
     }
 }

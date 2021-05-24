@@ -23,21 +23,18 @@ body {
     border-radius: 8px;
     z-index: 5;
 }
-
 .aside-user-image {
     height: 112px;
     width: 112px;
     border-radius: 50%;
     margin: 0px auto 16px;
 }
-
 .aside-user-name {
     font-weight: 600;
     font-size: 24px;
     color: #222222;
     margin-bottom: 4px;
 }
-
 .aside-user-level {
     display: block;
     font-weight: 400;
@@ -45,26 +42,22 @@ body {
     color: #646464;
     margin-bottom: 36.21px;
 }
-
 .aside-user-information {
     padding: 24px;
     margin-top: 28px;
     border: 1px solid #E7E8E9;
     border-radius: 4px;
 }
-
 .aside-user-text-left {
     padding-left: 12px;
     font-size: 16px;
     color: #646464;
 }
-
 .aside-user-text-right {
     font-weight: 600;
     font-size: 16px;
     color: #222222;
 }
-
 .aside-edit-profile {
     height: 56px;
     width: 100%;
@@ -77,19 +70,16 @@ body {
     font-size: 20px;
     color: #EA3AA1;
 }
-
 .aside-title-text {
     font-weight: 600;
     font-size: 24px;
     color: #222222;
 }
-
 .aside-button-edit {
     font-weight: 600;
     font-size: 20px;
     color: #EA3AA1;
 }
-
 .aside-description-area {
     width: 100%;
     font-size: 16px;
@@ -97,7 +87,6 @@ body {
     color: #646464;
     resize: none;
 }
-
 .aside-label-skill {
     height: 42px;
     display: inline-flex;
@@ -122,13 +111,11 @@ body {
     border-radius: 8px;
     z-index: 5;
 }
-
 .section-title-text {
     font-weight: 600;
     font-size: 28px;
     color: #222222;
 }
-
 .section-statistic-list {
     width: calc(25% - 18px);
     display: flex;
@@ -139,26 +126,22 @@ body {
     border: 1.5px solid #E7E8E9;
     border-radius: 8px;
 }
-
 .statistic-title {
     margin-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     color: #8F9090;
 }
-
 .statistic-value {
     font-weight: 600;
     font-size: 32px;
     color: #EA3AA1;
 }
-
 .section-button-text {
     font-weight: 600;
     font-size: 20px;
     color: #EA3AA1;
 }
-
 .section-order-header {
     width: 100%;
     display: flex;
@@ -167,42 +150,34 @@ body {
     padding-bottom: 16px;
     border-bottom: 1.5px solid #E7E8E9;
 }
-
 .order-header-title {
     font-weight: 600;
     font-size: 16px;
     color: #222222;
 }
-
 .section-order-buyer {
     width: 24.5%;
     display: flex;
     align-items: center;
 }
-
 .section-order-service {
     width: 24.5%;
 }
-
 .section-order-dueon {
     width: 16%;
     padding-left: 3%;
 }
-
 .section-order-price {
     width: 11%;
 }
-
 .section-order-action {
     width: 18%;
 }
-
 .section-order-body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
 .section-order-item {
     width: 100%;
     display: flex;
@@ -212,7 +187,6 @@ body {
     padding: 20px 0px 16px;
     border-bottom: 1.5px solid #E7E8E9;
 }
-
 .body-order-image {
     height: 32px;
     width: 32px;
@@ -220,7 +194,6 @@ body {
     object-fit: cover;
     object-position: center;
 }
-
 .body-order-name {
     padding-left: 8px;
     font-weight: 600;
@@ -228,19 +201,15 @@ body {
     color: #222222;
     line-height: 25px;
 }
-
 .body-order-text {
     font-size: 14px;
     line-height: 25px;
     color: #646464;
 }
-
-.body-order-date,
-.body-order-price {
+.body-order-date, .body-order-price {
     font-size: 14px;
     color: #646464;
 }
-
 .body-order-see {
     height: 40px;
     width: 100%;
@@ -253,7 +222,6 @@ body {
     font-size: 14px;
     color: #FDFEFF;
 }
-
 .section-service-list {
     width: calc(33.33% - 16px);
     background-color: #FDFEFF;
@@ -261,7 +229,6 @@ body {
     border: 1px solid #E7E8E9;
     border-radius: 8px;
 }
-
 .service-list-image {
     width: 100%;
     height: 112px;
@@ -270,7 +237,6 @@ body {
     border-radius: 8px;
     margin-bottom: 16px;
 }
-
 .service-list-title {
     font-weight: 600;
     font-size: 14px;
@@ -278,7 +244,6 @@ body {
     color: #222222;
     margin-bottom: 19px;
 }
-
 .service-list-edit {
     font-weight: 600;
     font-size: 20px;
