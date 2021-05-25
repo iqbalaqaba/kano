@@ -14,16 +14,32 @@ body {
     line-height: 42px;
     color: #222222;
 }
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 20px;
+        line-height: 34px;
+    }
+}
 
 #main {
     padding-top: 194px;
     padding-bottom: 80px;
 }
+@media (max-width: 768px) {
+    #main {
+        padding-top: 126px;
+        padding-bottom: 60px;
+    }  
+}
 
 #article {
     width: calc(100% - 407px - 30px);
     background-color: #FDFEFF;
+    padding: 40px 32px;
     border-radius: 8px;
+}
+#article .svg-star {
+    margin-left: 6px;
 }
 .article-title {
     font-weight: 600;
@@ -52,15 +68,27 @@ body {
     border-radius: 8px;
     object-fit: cover;
 }
+.row-secondary-image {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.row-secondary-image::-webkit-scrollbar {
+    display: none;
+}
 .article-image-secondary {
     height: 120px;
     width: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 24px;
+    opacity: 0.5;
+    cursor: pointer;
 }
 .article-image-secondary-active {
     border: 2px solid #FF8845;
+    opacity: 1 !important;
 }
 .article-deskripsi-text {
     font-size: 20px;
@@ -117,6 +145,81 @@ body {
     line-height: 28px;
     color: #646464;
 }
+@media (max-width: 1250px) {
+    #article {
+        width: calc(100% - 370px - 30px);
+        background-color: #FDFEFF;
+        padding: 36px 24px;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 1024px) {
+    #article {
+        width: 100%;
+        padding: 40px 32px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px) {
+    #article {
+        width: 100%;
+        padding: 32px 18px;
+        margin-bottom: 32px;
+    }
+    #article .svg-star {
+        height: 18px;
+        width: 18px;
+        margin-left: 2px;
+    }
+    .article-title {
+        font-size: 22px;
+        line-height: 37px;
+    }
+    .article-user-image {
+        height: 40px;
+        width: 40px;
+    }
+    .article-user-name {
+        font-size: 12px;
+    }
+    .article-user-level {
+        font-size: 12px;
+    }
+    .article-image-primary {
+        height: 300px;
+    }
+    .article-image-secondary {
+        height: 100px;
+        width: 180px;
+        margin-right: 20px;
+    }
+    .article-deskripsi-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .article-keahlian-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .article-testimonial-list {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .article-testimonial-user-image {
+        height: 40px;
+        width: 40px;
+    }
+    .article-testimonial-user-name {
+        font-size: 12px;
+    }
+    .article-testimonial-user-level {
+        font-size: 12px;
+    }
+    .article-testimonial-text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
 
 #aside {
     width: 407px;
@@ -154,4 +257,72 @@ body {
     font-weight: 600;
     font-size: 20px;
     color: #FDFEFF;
+}
+@media (max-width: 1250px) {
+    #aside {
+        width: 370px;
+        padding: 36px 24px;
+    }
+    .aside-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .aside-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .aside-price {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .aside-button-paket {
+        height: 48px;
+        width: 162px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1024px) {
+    #aside {
+        width: 100%;
+        padding: 40px 32px;
+    }
+    .aside-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .aside-text {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .aside-price {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .aside-button-paket {
+        height: 56px;
+        width: 172px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .aside-title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .aside-text {
+        margin-bottom: 18px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .aside-price {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .aside-button-paket {
+        height: 48px;
+        width: 155px;
+        font-size: 16px;
+    }
 }
