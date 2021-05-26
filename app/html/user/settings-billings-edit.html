@@ -8,7 +8,7 @@
     <meta name="description" content="#">
     <meta name="keywords" content="#">
     <meta name="author" content="#">
-    <title>Kanno - User Dashboard</title>
+    <title>Kanno - User Settings Billings Edit</title>
     <!-- CALL: ICON -->
     <link rel="icon" href="../../assets/img/logo.png" type="image/gif" sizes="16x16">
     <!-- CALL: SWIPER CSS -->
@@ -82,27 +82,27 @@
    <!-- MAIN -->
     <main id="main-settings">
         <div class="container-kanoo">
-            <div class="row-flex-kanoo">
+            <div class="row-flex-kanoo justify-between">
                 <aside class="aside-settings">
-                    <div class="mb-24px">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
                         <h3 class="aside-title">Settings</h3>
                     </div>
-                    <div class="mb-16px">
-                        <a href="./settings-account.html" class="aside-link">Account</a>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link">Account</a>
                     </div>
-                    <div class="mb-16px">
-                        <a href="./settings-security.html" class="aside-link">Security</a>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link">Security</a>
                     </div>
                     <div>
-                        <a href="./settings-billings.html" class="aside-link aside-link-active">Billings</a>
+                        <a href="./settings-billings" class="aside-link aside-link-active">Billings</a>
                     </div>
                 </aside>
                 <div class="main-line"></div>
                 <section class="section-settings">
-                    <div class="mb-8px">
+                    <div class="mb-4px md:mb-8px">
                         <h1 class="section-title">Billings Settings</h1>
                     </div>
-                    <div class="mb-40px">
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
                         <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
                     </div>
                     <form class="section-settings-container">
@@ -113,7 +113,7 @@
                             <h6 class="section-subtitle-16px">Bank Account</h6>
                         </div>
                         <div class="mb-24px">
-                            <img src="../assets/images/bank-bri.png" height="48" alt="#">
+                            <img src="../../assets/img/bank-bri.png" height="48" alt="#">
                         </div>
                         <div class="mb-24px">
                             <input class="section-form-input w-full" type="text" value="3333 3333 3333" readonly>
@@ -121,10 +121,10 @@
                         <div class="mb-48px">
                             <input class="section-form-input w-full" type="text" value="Agus Puyono">
                         </div>
-                        <div class="flex items-center justify-end">
-                            <button class="section-button-link-remove-method">Remove Method</button>
-                            <a href="./settings-security.html" class="section-button-link-cancel ml-32px">Cancel</a>
-                            <button class="section-button-link ml-32px">Save Changes</button>
+                        <div class="flex items-center flex-wrap justify-end">
+                            <button class="section-button-link-remove-method mb-12px md:mb-0 order-3 md:order-1">Remove Method</button>
+                            <a href="./settings-billings" class="section-button-link-cancel md:ml-24px xl:ml-32px mb-12px md:mb-18px lg:mb-0 order-2 md:order-2">Cancel</a>
+                            <button class="section-button-link md:ml-24px xl:ml-32px mb-12px md:mb-0 order-1 md:order-3">Save Changes</button>
                         </div>
                     </form>
                 </section>
@@ -219,9 +219,7 @@
     </footer>
     <!-- CALL: jQUERY -->
     <script src="../../assets/js/jquery-3.5.1.min.js"></script>
-    <!-- CALL: SWIPER JS -->
-    <script src="../../assets/js/swiper/swiper-bundle.min.js"></script>
     <!-- CALL: DASHBOARD JS -->
-    <script src="../../assets/js/.js"></script>
+    <script src="../../assets/js/settings.js"></script>
 </body>
 </html>
