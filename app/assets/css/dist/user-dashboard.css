@@ -6,6 +6,18 @@ body {
     padding-top: 176px;
     padding-bottom: 80px;
 }
+@media (max-width: 768px) {
+    #main-user-dashboard {
+        padding-top: 146px;
+        padding-bottom: 80px;
+    }
+}
+@media (max-width: 576px) {
+    #main-user-dashboard {
+        padding-top: 116px;
+        padding-bottom: 80px;
+    }
+}
 
 .cover-yellow {
     height: 470px;
@@ -101,6 +113,69 @@ body {
     font-size: 16px;
     color: #EA3AA1;
 }
+@media (max-width: 768px) {
+    .aside-dashboard {
+        width: 100%;
+        padding: 36px 20px;
+        margin-bottom: 40px;
+    }
+    .aside-user-name {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+    .aside-user-level {
+        font-size: 18px;
+        margin-bottom: 26px;
+    }
+    .aside-user-information {
+        padding: 20px;
+        margin-top: 28px;
+    }
+    .aside-user-text-left {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    .aside-user-text-right {
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px) {
+    .aside-dashboard {
+        width: 100%;
+        padding: 32px 16px;
+        margin-bottom: 30px;
+    }
+    .aside-dashboard .block-flex-row-center svg {
+        height: 20px;
+        width: 20px;
+    }
+    .aside-user-name {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    .aside-user-level {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .aside-user-information {
+        padding: 18px;
+        margin-top: 28px;
+    }
+    .aside-user-text-left {
+        padding-left: 8px;
+        font-size: 14px;
+    }
+    .aside-user-text-right {
+        font-size: 14px;
+    }
+    .aside-edit-profile {
+        height: 48px;
+        font-size: 18px;
+    }
+    .aside-title-text {
+        font-size: 20px;
+    }
+}
 
 
 /* DASHBOARD RIGHT */
@@ -110,6 +185,18 @@ body {
     background: #FDFEFF;
     border-radius: 8px;
     z-index: 5;
+}
+@media (max-width: 768px) {
+    .section-dashboard {
+        width: 100%;
+        padding: 40px 32px 81px;
+    }
+}
+@media (max-width: 576px) {
+    .section-dashboard {
+        width: 100%;
+        padding: 40px 32px 81px;
+    }
 }
 .section-title-text {
     font-weight: 600;
