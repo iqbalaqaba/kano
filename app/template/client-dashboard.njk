@@ -8,7 +8,7 @@
     <meta name="description" content="#">
     <meta name="keywords" content="#">
     <meta name="author" content="#">
-    <title>Kanno - Client Settings</title>
+    <title>{{title}}</title>
     <!-- CALL: ICON -->
     <link rel="icon" href="../../assets/img/logo.png" type="image/gif" sizes="16x16">
     <!-- CALL: SWIPER CSS -->
@@ -16,7 +16,7 @@
     <!-- CALL: TAILWIND -->
     <link rel="stylesheet" href="../../assets/css/dist/tailwind.css">
     <!-- CALL: USER DASHBOARD CSS -->
-    <link rel="stylesheet" href="../../assets/css/dist/settings.css">
+    <link rel="stylesheet" href="../../assets/css/dist/{{style}}.css">
     <!-- CALL: GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -73,61 +73,7 @@
     <div class="kanoo-cover-body"></div>
 
     <!-- Content block start here -->
-        
-    <!-- MAIN -->
-    <main id="main-settings">
-        <div class="container-kanoo">
-            <div class="row-flex-kanoo justify-between">
-                <aside class="aside-settings">
-                    <div class="w-full mb-14px sm:18px md:mb-24px">
-                        <h3 class="aside-title">Settings</h3>
-                    </div>
-                    <div class="md:mb-16px">
-                        <a href="./settings-account" class="aside-link aside-link-active">Account</a>
-                    </div>
-                    <div class="md:mb-16px">
-                        <a href="./settings-security" class="aside-link">Security</a>
-                    </div>
-                    <div>
-                        <a href="./settings-billings" class="aside-link">Billings</a>
-                    </div>
-                </aside>
-                <div class="main-line"></div>
-                <section class="section-settings">
-                    <div class="mb-4px md:mb-8px">
-                        <h1 class="section-title">Account Settings</h1>
-                    </div>
-                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
-                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
-                    </div>
-                    <div class="section-settings-container">
-                        <div class="row-flex-kanoo items-center justify-between mb-36px md:mb-42px lg:mb-48px xl:mb-56px">
-                            <div class="flex items-center mb-12px md:mb-0">
-                                <img class="account-user-image" src="../../assets/img/user.png" alt="">
-                                <strong class="account-user-name">Yamato Santosa</strong>
-                            </div>
-                            <a href="./settings-account-edit" class="section-button-link">Edit Profile</a>
-                        </div>
-                        <div class="mb-28px md:mb-42px lg:mb-46px">
-                            <h5 class="section-subtitle">My Email</h5>
-                            <h6 class="account-user-email">agusghantenk@gmail.com</h6>
-                        </div>
-                        <div>
-                            <h5 class="section-subtitle">My Skills</h5>
-                            <div class="row-flex-kanoo items-center mt-8px md:mt-0">
-                                <div class="account-label-skill">UI/UX Design</div>
-                                <div class="account-label-skill">Logo Design</div>
-                                <div class="account-label-skill">Visual Effect</div>
-                                <div class="account-label-skill">Writing</div>
-                                <div class="account-label-skill">Internet Marketing</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
-
+        {% block content %}{% endblock %}
     <!-- Content block end here -->
 
     <!-- FOOTER -->
@@ -214,6 +160,6 @@
     <!-- CALL: jQUERY -->
     <script src="../../assets/js/jquery-3.5.1.min.js"></script>
     <!-- CALL: DASHBOARD JS -->
-    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/{{script}}.js"></script>
 </body>
 </html>
