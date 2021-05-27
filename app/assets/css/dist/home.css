@@ -545,6 +545,7 @@
 
 #freelance-list {
     background-color: #D9BF3F;
+    margin-top: 80px;
     padding: 80px 0px;
 }
 #freelance-list .row-flex-kanoo {
@@ -799,8 +800,8 @@
     color: #E4F9F4;
 }
 #client-testimonial .swiper-user-text {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 22px;
+    line-height: 37px;
 }
 @media (max-width: 1024px) {
     #client-testimonial .swiper-pagination-bullet {
@@ -823,8 +824,8 @@
         font-size: 18px;
     }
     #client-testimonial .swiper-user-text {
-        font-size: 24px;
-        line-height: 38px;
+        font-size: 20px;
+        line-height: 34px;
     }
 }
 @media (max-width: 768px) {
@@ -856,8 +857,8 @@
         font-size: 14px;
     }
     #client-testimonial .swiper-user-text {
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 28px;
     }
 }
 @media (max-width: 550px) {
