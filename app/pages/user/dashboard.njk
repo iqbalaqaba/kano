@@ -1,12 +1,11 @@
 <!-- Nama pages-->
 {% set title = 'Kanno - User Dashboard' %}
 {% set style = 'user-dashboard' %}
+{% set script = 'user-dashboard' %}
 {% extends "user-dashboard.njk" %}
 
 {% block content %}
-<!-- COVER BODY: MODAL -->
-    <div class="kanoo-cover-body"></div>
-    <!-- COVER HEADER: GREEN -->
+    <!-- COVER HEADER: YELLOW -->
     <div class="cover-yellow"></div>
     <!-- MAIN -->
     <main id="main-user-dashboard">
@@ -14,30 +13,30 @@
             <div class="row-flex-kanoo items-start justify-between">
                 <aside class="aside-dashboard">
                     <div class="text-center">
-                        <img class="aside-user-image" src="../assets/images/user.png" alt="">
+                        <img class="aside-user-image" src="../../assets/img/user.png" alt="">
                         <h6 class="aside-user-name">Agus Puyono</h6>
                         <strong class="aside-user-level">Seller Level 2</strong>
                         <div class="block-flex-row-center">
-                            <svg class="mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
                             </svg>
-                            <svg class="mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
                             </svg>
-                            <svg class="mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
                             </svg>
-                            <svg class="mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
                             </svg>
-                            <svg class="mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
                             </svg>
-                            <span class="font-semibold text-16px text-black-50 mx-4px">5.0 (11)</span>
+                            <span class="font-semibold text-14px md:text-16px text-black-50 mx-4px pt-1 md:pt-0">5.0 (11)</span>
                         </div>
                     </div>
                     <div class="aside-user-information">
-                        <div class="row-flex-kanoo justify-between mb-24px">
+                        <div class="row-flex-kanoo justify-between mb-18px md:mb-24px">
                             <div class="flex items-center">
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +47,7 @@
                             </div>
                             <strong class="aside-user-text-right">Indonesia</strong>
                         </div>
-                        <div class="row-flex-kanoo justify-between mb-24px">
+                        <div class="row-flex-kanoo justify-between mb-18px md:mb-24px">
                             <div class="flex items-center">
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +58,7 @@
                             </div>
                             <strong class="aside-user-text-right">March 2020</strong>
                         </div>
-                        <div class="row-flex-kanoo justify-between mb-24px">
+                        <div class="row-flex-kanoo justify-between mb-18px md:mb-24px">
                             <div class="flex items-center">
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,24 +81,24 @@
                             <strong class="aside-user-text-right">7 April 2021</strong>
                         </div>
                     </div>
-                    <div class="mt-24px">
+                    <div class="mt-18px md:mt-24px">
                         <a href="#" class="aside-edit-profile">Edit Profile</a>
                     </div>
-                    <div class="mt-48px">
-                        <div class="row-flex-kanoo justify-between">
+                    <div class="mt-36px md:mt-48px">
+                        <div class="row-flex-kanoo items-center justify-between">
                             <h4 class="aside-title-text">Description</h4>
-                            <button type="button" class="aside-button-edit">Edit</button>
+                            <button type="button" class="aside-button-edit" data-button="edit-description" data-description="readonly">Edit</button>
                         </div>
-                        <div class="mt-16px">
-                            <textarea class="aside-description-area" rows="4">Lorem ipsum dolor sit amet, consectetur adi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adnun minim veniam.</textarea>
+                        <div class="mt-12px md:mt-16px">
+                            <textarea class="aside-description-area" rows="4" readonly>Lorem ipsum dolor sit amet, consectetur adi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adnun minim veniam.</textarea>
                         </div>
                     </div>
-                    <div class="mt-48px">
-                        <div class="row-flex-kanoo justify-between">
+                    <div class="mt-36px md:mt-48px">
+                        <div class="row-flex-kanoo items-center justify-between">
                             <h4 class="aside-title-text">Skill</h4>
-                            <button type="button" class="aside-button-edit">Edit</button>
+                            <a href="./settings-account" class="aside-button-edit">Edit</a>
                         </div>
-                        <div class="mt-16px">
+                        <div class="mt-12px md:mt-16px">
                             <div class="aside-label-skill">Illustration</div>
                             <div class="aside-label-skill">User Experience Design</div>
                             <div class="aside-label-skill">Graphic Design</div>
@@ -109,7 +108,7 @@
                 </aside>
                 <section class="section-dashboard">
                     <!-- STATISTIC -->
-                    <div class="mb-48px">
+                    <div class="mb-32px md:mb-36px lg:mb-48px">
                         <div class="mb-16px">
                             <h3 class="section-title-text">Statistic</h3>
                         </div>
@@ -133,8 +132,8 @@
                         </div>
                     </div>
                     <!-- ACTIVE ORDER -->
-                    <div class="mb-48px">
-                        <div class="flex justify-between mb-24px">
+                    <div class="mb-32px md:mb-36px lg:mb-48px">
+                        <div class="flex items-center justify-between mb-18px md:mb-24px">
                             <h3 class="section-title-text">Active Order</h3>
                             <a href="#" class="section-button-text">See more (12)</a>
                         </div>
@@ -151,7 +150,7 @@
                             <div class="section-order-body">
                                 <article class="section-order-item">
                                     <div class="section-order-buyer">
-                                        <img class="body-order-image" src="../assets/images/user.png" alt="">
+                                        <img class="body-order-image" src="../../assets/img/user.png" alt="">
                                         <strong class="body-order-name">Yamato Santosa</strong>
                                     </div>
                                     <div class="section-order-service">
@@ -169,7 +168,7 @@
                                 </article>
                                 <article class="section-order-item">
                                     <div class="section-order-buyer">
-                                        <img class="body-order-image" src="../assets/images/user.png" alt="">
+                                        <img class="body-order-image" src="../../assets/img/user.png" alt="">
                                         <strong class="body-order-name">Yamato Santosa</strong>
                                     </div>
                                     <div class="section-order-service">
@@ -187,7 +186,7 @@
                                 </article>
                                 <article class="section-order-item">
                                     <div class="section-order-buyer">
-                                        <img class="body-order-image" src="../assets/images/user.png" alt="">
+                                        <img class="body-order-image" src="../../assets/img/user.png" alt="">
                                         <strong class="body-order-name">Yamato Santosa</strong>
                                     </div>
                                     <div class="section-order-service">
@@ -208,46 +207,46 @@
                     </div>
                     <!-- SERVICE -->
                     <div>
-                        <div class="flex justify-between mb-24px">
+                        <div class="flex items-center justify-between mb-18px md:mb-24px">
                             <h3 class="section-title-text">Service</h3>
                             <a href="#" class="section-button-text">Add Service</a>
                         </div>
                         <div class="row-flex-kanoo justify-between">
                             <article class="section-service-list">
-                                <img class="service-list-image" src="../assets/images/freelance-list-1.png" alt="#">
+                                <img class="service-list-image" src="../../assets/img/freelance-list-1.png" alt="#">
                                 <h2 class="service-list-title">Help you to make a Poster Design for marketing needs</h2>
                                 <div class="row-flex-kanoo items-center justify-between">
                                     <div class="flex items-center">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12.9482 2.80617L15.6072 8.19417L21.5532 9.05817C22.4202 9.18417 22.7672 10.2502 22.1392 10.8622L17.8362 15.0562L18.8522 20.9782C19.0002 21.8422 18.0942 22.5002 17.3182 22.0932L12.0002 19.2972L6.68219 22.0932C5.90619 22.5012 5.00019 21.8422 5.14819 20.9782L6.16419 15.0562L1.86019 10.8622C1.23319 10.2502 1.57919 9.18517 2.44619 9.05917L8.39219 8.19517L11.0512 2.80717C11.4402 2.02017 12.5602 2.02017 12.9482 2.80617Z" fill="#FFB422"/>
                                         </svg>
-                                        <span class="font-semibold text-16px text-black-50 ml-10px">5.0 (11)</span>
+                                        <span class="font-semibold text-14px md:text-16px text-black-50 ml-8px md:ml-10px pt-1 md:pt-0">5.0 (11)</span>
                                     </div>
                                     <a href="#" class="service-list-edit">Edit</a>
                                 </div>
                             </article>
                             <article class="section-service-list">
-                                <img class="service-list-image" src="../assets/images/freelance-list-2.png" alt="#">
+                                <img class="service-list-image" src="../../assets/img/freelance-list-2.png" alt="#">
                                 <h2 class="service-list-title">Help you to make a Poster Design for marketing needs</h2>
                                 <div class="row-flex-kanoo items-center justify-between">
                                     <div class="flex items-center">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12.9482 2.80617L15.6072 8.19417L21.5532 9.05817C22.4202 9.18417 22.7672 10.2502 22.1392 10.8622L17.8362 15.0562L18.8522 20.9782C19.0002 21.8422 18.0942 22.5002 17.3182 22.0932L12.0002 19.2972L6.68219 22.0932C5.90619 22.5012 5.00019 21.8422 5.14819 20.9782L6.16419 15.0562L1.86019 10.8622C1.23319 10.2502 1.57919 9.18517 2.44619 9.05917L8.39219 8.19517L11.0512 2.80717C11.4402 2.02017 12.5602 2.02017 12.9482 2.80617Z" fill="#FFB422"/>
                                         </svg>
-                                        <span class="font-semibold text-16px text-black-50 ml-10px">5.0 (11)</span>
+                                        <span class="font-semibold text-14px md:text-16px text-black-50 ml-8px md:ml-10px pt-1 md:pt-0">5.0 (11)</span>
                                     </div>
                                     <a href="#" class="service-list-edit">Edit</a>
                                 </div>
                             </article>
                             <article class="section-service-list">
-                                <img class="service-list-image" src="../assets/images/freelance-list-3.png" alt="#">
+                                <img class="service-list-image" src="../../assets/img/freelance-list-3.png" alt="#">
                                 <h2 class="service-list-title">Help you to make a Poster Design for marketing needs</h2>
                                 <div class="row-flex-kanoo items-center justify-between">
                                     <div class="flex items-center">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12.9482 2.80617L15.6072 8.19417L21.5532 9.05817C22.4202 9.18417 22.7672 10.2502 22.1392 10.8622L17.8362 15.0562L18.8522 20.9782C19.0002 21.8422 18.0942 22.5002 17.3182 22.0932L12.0002 19.2972L6.68219 22.0932C5.90619 22.5012 5.00019 21.8422 5.14819 20.9782L6.16419 15.0562L1.86019 10.8622C1.23319 10.2502 1.57919 9.18517 2.44619 9.05917L8.39219 8.19517L11.0512 2.80717C11.4402 2.02017 12.5602 2.02017 12.9482 2.80617Z" fill="#FFB422"/>
                                         </svg>
-                                        <span class="font-semibold text-16px text-black-50 ml-10px">5.0 (11)</span>
+                                        <span class="font-semibold text-14px md:text-16px text-black-50 ml-8px md:ml-10px pt-1 md:pt-0">5.0 (11)</span>
                                     </div>
                                     <a href="#" class="service-list-edit">Edit</a>
                                 </div>

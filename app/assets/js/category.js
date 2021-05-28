@@ -36,7 +36,7 @@ $('#form-aside button[data-button="filter-toggle"]').on('click', function() {
     }
 });
 
-// RANGE SETTING
+// RANGE SETTING DESKTOP
 let rangeInput = document.getElementById("range-budget-input");
 let rangeValue = document.getElementById("range-budget-value");
 let rangeProgress = document.getElementById("range-budget-progress");
@@ -55,4 +55,38 @@ $('#form-aside label').on('click', function() {
     } else {
         $(this).find('.form-custom-checkbox-box').addClass('checkbox-box-active');
     }
+});
+
+
+// OPEN FILTER MOBILE
+$('.filter-main-sort button[data-button="open-filter"]').on('click', function() {
+    $('html').css({ 'overflow-y': 'hidden' });
+    $('#filter-mobile').addClass('filter-mobile-active');
+});
+// CANCEL FILTER MOBILE
+$('#filter-mobile button[data-button="cancel-filter"]').on('click', function() {
+    $('html').css({ 'overflow-y': 'auto' });
+    $('#filter-mobile').removeClass('filter-mobile-active');
+});
+// SIMPAN FILTER MOBILE
+$('#filter-mobile button[data-button="simpan-filter"]').on('click', function() {
+    $('html').css({ 'overflow-y': 'auto' });
+    $('#filter-mobile').removeClass('filter-mobile-active');
+});
+
+// RANGE SETTING MOBILE
+let rangeInputMobile = document.getElementById("range-budget-input-mobile");
+let rangeValueMobile = document.getElementById("range-budget-value-mobile");
+let rangeProgressMobile = document.getElementById("range-budget-progress-mobile");
+let rangeLengthMobile = document.getElementById("range-budget-length-mobile").innerText.length;
+rangeValueMobile.innerHTML = rangeInputMobile.value;
+rangeProgressMobile.style.width = `${rangeInputMobile.value / 10}%`;
+rangeInputMobile.oninput = function() {
+    rangeValueMobile.innerHTML = this.value;
+    rangeProgressMobile.style.width = `${this.value / 10}%`;
+}
+
+// SELECT BOX FILTER
+$('#filter-mobile .filter-label-text').on('click', function() {
+    $(this).toggleClass('filter-label-text-active');
 });

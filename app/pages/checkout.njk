@@ -1,10 +1,11 @@
 <!-- Nama pages-->
 {% set title = 'Kanno - Checkout' %}
 {% set style = 'checkout' %}
-{% extends "landing-page.njk" %}
+{% set script = 'checkout' %}
+{% extends "checkout.njk" %}
 
 {% block content %}
-<!-- SECTION -->
+    <!-- SECTION -->
     <section id="section" class="pt-80px md:pt-96px lg:pt-144px">
         <div class="container-kanoo">
             <div class="block-flex-row-center py-12px">
@@ -137,7 +138,7 @@
                     <div class="mb-24px md:mb-28px lg:mb-32px">
                         <h3 class="aside-title">Ringkasan Order</h3>
                     </div>
-                    <div class="flex items-center justify-between mb-16px md:mb-20px mb-24px">
+                    <div class="flex items-center justify-between mb-16px md:mb-20px lg:mb-24px">
                         <span class="aside-subtitle text-black-70">Subtotal</span>
                         <span class="aside-subtitle text-black-70">$120</span>
                     </div>
