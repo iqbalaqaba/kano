@@ -1,14 +1,22 @@
-<!-- Nama pages-->
-{% set title = 'Kanno - Login' %}
-{% set style = 'help-detail' %}
-{% extends "landing-page.njk" %}
+{% set title = 'Login' %}
+{% extends "nav-login.njk" %}
+
+{% block head %}
+    <style>
+        #checkbox:checked + div {
+            background-color: #ea3aa1;
+            border: none;
+        }
+        #checkbox:checked + div > svg {
+            display: block;
+        }
+    </style>
+{% endblock %}
 
 {% block content %}
-<!-- COVER BODY: MODAL -->
-    <div class="kanoo-cover-body"></div>
-    <div class="container-kanoo grid place-items-center relative top-32 lg:top-48">
+    <div class="container-kanoo grid place-items-center relative pt-32 lg:pt-48">
         <!-- LOGIN FORM -->
-        <div class="mb-16 bg-white border border-black-30 rounded-5px w-full px-4 lg:px-20 py-16 grid place-items-center" style="max-width: 600px;">
+        <div class="mb-16 bg-white border border-black-30 rounded-5px w-full px-4 lg:px-20 py-16 lg:py-20 grid place-items-center" style="max-width: 600px;">
             <h1 class="font-semibold text-40px mb-5 text-center leading-tight">Masuk ke Kanno</h1>
             <form action="#" style="max-width: 400px;" class="w-full">
                 <div class="mb-5">
@@ -29,13 +37,26 @@
                         </div>
                         <div class="select-none text-14px">Ingat Saya</div>
                     </label>
-                    <a href="#" class="underline text-oren-100 text-14px font-semibold">Lupa Password?</a>
+                    <a href="#" class="underline text-meja-100 text-14px font-semibold">Lupa Password?</a>
                 </div>
                 <div class="mb-5">
-                    <button type="submit" class="rounded-4px text-center py-3 w-full bg-oren-100 text-white font-semibold">Masuk Sekarang</button>
+                    <button type="submit" class="rounded-4px text-center py-3 w-full bg-meja-100 text-white font-semibold">Masuk Sekarang</button>
                 </div>
-                <a href="#" class="block border border-oren-100 text-16px rounded-4px text-center py-3 w-full bg-white text-oren-100">Belum punya akun ? Daftar Sekarang</a>
+                <a href="#" class="block border border-meja-100 text-16px rounded-4px text-center py-3 w-full bg-white text-meja-100">Belum punya akun ? Daftar Sekarang</a>
             </form>
         </div>
-    </div> 
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        // show/hide password toggle
+        $("#togglePassword").click(function () {
+            if ($("#password-field").attr("type") == "password") {
+                $("#password-field").attr("type", "text");
+            } else {
+                $("#password-field").attr("type", "password");
+            }
+        });
+    </script>
 {% endblock %}

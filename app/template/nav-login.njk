@@ -7,7 +7,7 @@
     <meta name="description" content="#">
     <meta name="keywords" content="#">
     <meta name="author" content="#">
-     <title>Forgot Password</title>
+     <title>{{title}}</title>
     <!-- CALL: ICON -->
     <link rel="icon" href="../assets/img/logo.png" type="image/gif" sizes="16x16">
     <!-- CALL: SWIPER CSS -->
@@ -15,11 +15,11 @@
     <!-- CALL: TAILWIND -->
     <link rel="stylesheet" href="../assets/css/dist/tailwind.css">
     <!-- CALL: HOMECSS -->
-    <link rel="stylesheet" href="../assets/css/dist/.css">
+    <link rel="stylesheet" href="../assets/css/dist/{{style}}.css">
     <!-- CALL: GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
+    {% block head %}{% endblock %}
 </head>
 <body>
     <!-- NAV -->
@@ -63,24 +63,7 @@
     <div class="kanoo-cover-body"></div>
 
     <!-- Content block start here -->
-        
-    <div class="mb-16 container-kanoo grid place-items-center relative pt-32 lg:pt-48">
-        <!-- LOGIN FORM -->
-        <div class="bg-white border border-black-30 rounded-5px w-full px-4 lg:px-20 py-16 lg:py-28 flex flex-col justify-center items-center" style="max-width: 600px;">
-            <h1 class="font-semibold text-40px mb-5">Lupa Password</h1>
-            <p class="mb-6 text-center text-16px text-black-70">Masukkan alamat email anda yang terdaftar untuk lupa password</p>
-            <form action="#" style="max-width: 400px;" class="w-full">
-                <div class="mb-5">
-                    <input type="email" class="w-full text-16px placeholder-black-50 rounded-4px border border-black-30 px-4 h-56px" placeholder="Alamat Email" name="email" id="email">
-                </div>
-                <div class="mb-5">
-                    <button type="submit" class="rounded-4px text-center py-3 w-full bg-meja-100 text-white font-semibold">Kirim</button>
-                </div>
-                <a href="#" class="block text-center underline text-meja-100 text-14px font-semibold">Kembali ke Halaman Login</a>
-            </form>
-        </div>
-    </div>
-
+        {% block content %}{% endblock %}
     <!-- Content block end here -->
 
     <!-- CALL: jQUERY -->
@@ -102,6 +85,6 @@
             closeLeftNav();
         });
     </script>
-    
+    {% block script %}{% endblock %}
 </body>
 </html>
