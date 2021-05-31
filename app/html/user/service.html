@@ -11,19 +11,16 @@
     <title>Service</title>
     <!-- CALL: ICON -->
     <link rel="icon" href="../../assets/img/logo.png" type="image/gif" sizes="16x16">
+    <!-- CALL: SWIPER CSS -->
+    <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
     <!-- CALL: TAILWIND -->
     <link rel="stylesheet" href="../../assets/css/dist/tailwind.css">
+    <!-- CALL: USER DASHBOARD CSS -->
+    <link rel="stylesheet" href="../../assets/css/dist/service.css">
     <!-- CALL: GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
-    <style>
-        .show {
-            display: block;
-            z-index: 9999;
-        }
-    </style>
-
 </head>
 <body>
     <!-- NAV -->
@@ -83,7 +80,7 @@
 
     <!-- Content block start here -->
             
-    <div class="relative pt-28 md:pt-40">
+    <div class="relative pt-12 md:pt-20">
         <div class="container-kanoo">
 
             <div class="mb-6 md:mb-10 flex flex-col md:flex-row md:items-center justify-between">
@@ -361,18 +358,18 @@
     <!-- Content block end here -->
 
     <!-- FOOTER -->
-    <footer id="footer" class="footer-kanoo">
+    <footer id="footer" class="footer-kanoo" style="background: rgba(231, 232, 233, 0.3) !important;">
         <div class="container-kanoo">
             <div class="row-flex-kanoo pt-68px">
-                <div class="footer-kanoo-col-primary w-full lg:w-1/4 lg:pr-8 mb-18px lg:mb-0">
+                <div class="footer-kanoo-col-primary">
                     <h5 class="footer-kanoo-title">
                         <img src="../../assets/img/icon-kanoo-footer.png" height="48" width="153" alt="#">
                     </h5>
                     <p class="footer-kanoo-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod</p>
-                    <a href="#" class="font-semibold text-16px md:text-20px text-oren-100">Baca selengkapnya</a>
+                    <a href="#" class="footer-kanoo-link-selengkapnya">Baca selengkapnya</a>
                 </div>
-                <div class="footer-kanoo-col-secondary w-full lg:w-1/4 lg:px-4 mb-18px lg:mb-0">
+                <div class="footer-kanoo-col-secondary">
                     <h5 class="footer-kanoo-title">Category</h5>
                     <div>
                         <a href="#" class="footer-kanoo-link">Graphic Design</a>
@@ -381,7 +378,7 @@
                         <a href="#" class="footer-kanoo-link">Web Development</a>
                     </div>
                 </div>
-                <div class="footer-kanoo-col-secondary w-full lg:w-1/4 lg:px-4 mb-18px lg:mb-0">
+                <div class="footer-kanoo-col-secondary">
                     <h5 class="footer-kanoo-title">Social Media</h5>
                     <div>
                         <a href="#" class="footer-kanoo-link">
@@ -410,7 +407,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-kanoo-col-secondary w-full lg:w-1/4 lg:px-4 mb-18px lg:mb-0">
+                <div class="footer-kanoo-col-secondary">
                     <h5 class="footer-kanoo-title">Contact</h5>
                     <div>
                         <a href="#" class="footer-kanoo-link">
@@ -441,47 +438,9 @@
             </div>
         </div>
     </footer>
-
     <!-- CALL: jQUERY -->
-    <script src="../assets/js/jquery-3.5.1.min.js"></script>
-    <!-- TEST: JAVASCRIPT -->
-    <script>
-        function openLeftNav() {
-            $('.kanoo-cover-body').addClass('kanoo-cover-body-acitve');
-            $('.nav-left-kanoo').css({'transform': 'translateX(0%)'});
-        }
-        function closeLeftNav() {
-            $('.kanoo-cover-body').removeClass('kanoo-cover-body-acitve');
-            $('.nav-left-kanoo').css({'transform': 'translateX(-100%)'});
-        }
-        $('#nav-button').on('click', function() {
-            openLeftNav();
-        });
-        $('.kanoo-cover-body').on('click', function() {
-            closeLeftNav();
-        });
-    </script>
-    
-    <script>
-        
-        function drop(el) {
-            let dropdowns = document.getElementsByClassName('dropdown-content');
-
-            let table = document.getElementById('table');
-
-            let thisDropdown = el.nextSibling.nextSibling;
-            
-            if (!thisDropdown.classList.contains('show')) {
-                table.classList.add('overflow-x-auto');
-                for (var i = 0; i < dropdowns.length; i++) {
-                    dropdowns[i].classList.remove('show');
-                }
-            }
-            
-            thisDropdown.classList.toggle('show');
-            table.classList.toggle('overflow-x-auto');
-        }
-    </script>
-
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <!-- CALL: DASHBOARD JS -->
+    <script src="../../assets/js/service.js"></script>
 </body>
 </html>
