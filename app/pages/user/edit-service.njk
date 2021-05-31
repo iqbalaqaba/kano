@@ -1,34 +1,10 @@
 {% set title = 'Edit Service' %}
-{% extends 'nav-login-freelance.njk' %}
-
-{% block head %}
-    <style>
-        /* CHECKBOX TOGGLE SWITCH */
-        .toggle-checkbox:checked {
-            right: 0;
-            background-color: #EA3AA1; 
-        }   
-
-        /* TAB MENU */
-        .tab-enable {
-            background: #F9F8EC;
-            color: #D9BF3F;
-            cursor: pointer;
-        }
-        .tab-disable {
-            background: #E7E8E9;
-            color: #8F9090;
-            pointer-events: none;
-        }
-        .active {
-            background: #00D98B;
-            color: #ffffff;
-        }
-    </style>
-{% endblock %}
+{% set style = 'edit-service' %}
+{% set script = 'edit-service' %}
+{% extends 'user-dashboard.njk' %}
 
 {% block content %}
-    <div class="relative pt-28 md:pt-40">
+    <div class="relative pt-12 md:pt-20">
         <div class="container-kanoo lg:px-56">
 
             <div class="flex flex-col md:flex-row items-end md:items-center justify-between md:space-x-5 mb-10">
@@ -142,36 +118,4 @@ Source File
             </div>
         </div>
     </div>
-{% endblock %}
-
-{% block script %}
-    <script>
-        function toggleTab() {
-            var toggle = document.getElementById('toggle')
-            var tabs = document.querySelectorAll('.tab')
-            if(toggle.checked == true) {
-                for (var i = 0; i < tabs.length; ++i) {
-                    tabs[i].classList.remove('tab-disable')
-                    tabs[i].classList.add('tab-enable')
-                }
-            } else {
-                for (var i = 0; i < tabs.length; ++i) {
-                    tabs[i].classList.remove('tab-enable')
-                    tabs[i].classList.add('tab-disable')
-                }
-            }
-        }
-
-        function openTab(event, tabName) {
-            const tabContents = document.querySelectorAll('.tab-content')
-            const tabs = document.querySelectorAll('.tab')
-
-            tabContents.forEach((tabContent) => (tabContent.style.display = 'none'))
-
-            tabs.forEach((tab) => (tab.classList.remove('active')))
-
-            event.currentTarget.classList.add('active')
-            document.getElementById(tabName).style.display = 'block'
-        }
-    </script>
 {% endblock %}
