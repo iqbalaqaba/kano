@@ -2,13 +2,13 @@
     box-shadow: 10px 10px 40px rgba(100, 100, 100, 0.1);
 }
 
-/* Accordion */
+/* ACCORDION */
 /* Tab content - closed */
 .tab-content {
     max-height: 0;
-    -webkit-transition: max-height .35s;
-    -o-transition: max-height .35s;
-    transition: max-height .35s;
+    -webkit-transition: max-height 0.35s;
+    -o-transition: max-height 0.35s;
+    transition: max-height 0.35s;
 }
 
 /* :checked - resize to full height */
@@ -18,9 +18,14 @@
 
 /* Label formatting when open */
 .tab input:checked+label {
-    background-color: #FF8845;
+    background-color: #ea3aa1;
     color: #ffffff;
 }
+
+.tab input:checked+label>svg {
+    transform: rotateX(180deg);
+}
+
 
 /* Icon */
 .tab label::after {

@@ -725,6 +725,36 @@
             closeLeftNav();
         });
     </script>
+    <script>
+            function openLeftNav() {
+                $('.kanoo-cover-body').addClass('kanoo-cover-body-acitve');
+                $('.nav-left-kanoo').css({'transform': 'translateX(0%)'});
+            }
+            function closeLeftNav() {
+                $('.kanoo-cover-body').removeClass('kanoo-cover-body-acitve');
+                $('.nav-left-kanoo').css({'transform': 'translateX(-100%)'});
+            }
+            $('#nav-button').on('click', function () {
+                openLeftNav();
+            });
+            $('.kanoo-cover-body').on('click', function () {
+                closeLeftNav();
+            });
+        </script>
+        <script>
+            var myRadios = document.getElementsByName('accordion');
+            var setCheck;
+            for (var i = 0; i < myRadios.length; i++) {
+                myRadios[i].onclick = function () {
+                    if (setCheck != this) {
+                        setCheck = this;
+                    } else {
+                        this.checked = false;
+                        setCheck = null;
+                    }
+                }
+            }
+        </script>
     <!-- CALL: SWIPER JS -->
     <script src="../assets/js/swiper/swiper-bundle.min.js"></script>
     <!-- CALL: HOME JS -->
