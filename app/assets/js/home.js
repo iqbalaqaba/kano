@@ -47,6 +47,10 @@ const swiperTestimonial = new Swiper('#swiper-testimonial', {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: false,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.swiper-button-next-testimonial',
         prevEl: '.swiper-button-prev-testimonial',
