@@ -22,12 +22,12 @@ body {
 }
 
 #main {
-    padding-top: 194px;
+    padding-top: 98px;
     padding-bottom: 80px;
 }
 @media (max-width: 768px) {
     #main {
-        padding-top: 126px;
+        padding-top: 48px;
         padding-bottom: 60px;
     }  
 }

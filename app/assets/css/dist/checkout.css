@@ -1,6 +1,6 @@
 #nav {
     width: 100%;
-    position: fixed;
+    position: static;
     background-color: #FDFEFF;
     z-index: 50;
 }
