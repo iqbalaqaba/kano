@@ -1,28 +1,21 @@
 {% set title = 'Service' %}
-{% extends 'nav-login-freelance.njk' %}
-
-{% block head %}
-    <style>
-        .show {
-            display: block;
-            z-index: 9999;
-        }
-    </style>
-{% endblock %}
+{% set style = 'service' %}
+{% set script = 'service' %}
+{% extends 'user-dashboard.njk' %}
 
 {% block content %}    
-    <div class="relative pt-40">
+    <div class="relative pt-12 md:pt-20">
         <div class="container-kanoo">
 
-            <div class="mb-10 flex items-center justify-between">
-                <h1 class="font-bold text-40px">My Services</h1>
-                <form action="" class="flex items-center space-x-5">
-                    <input type="text" placeholder="Search service" class="px-4 h-14 border border-black-30 rounded-4px">
-                    <button class="flex items-center space-x-2 text-white bg-meja-100 px-4 h-14 rounded-4px">
+            <div class="mb-6 md:mb-10 flex flex-col md:flex-row md:items-center justify-between">
+                <h1 class="font-bold text-24px md:text-40px mb-3 md:mb-0">My Services</h1>
+                <form action="" class="flex items-center space-x-2 md:space-x-5">
+                    <input type="text" placeholder="Search service" class="w-7/12 md:w-auto px-4 h-14 border border-black-30 rounded-4px">
+                    <button class="w-5/12 md:w-auto flex items-center justify-center md:space-x-2 text-white bg-meja-100 px-4 h-14 rounded-4px">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 11H13V5C13 4.73478 12.8946 4.48043 12.7071 4.29289C12.5196 4.10536 12.2652 4 12 4C11.7348 4 11.4804 4.10536 11.2929 4.29289C11.1054 4.48043 11 4.73478 11 5V11H5C4.73478 11 4.48043 11.1054 4.29289 11.2929C4.10536 11.4804 4 11.7348 4 12C4 12.2652 4.10536 12.5196 4.29289 12.7071C4.48043 12.8946 4.73478 13 5 13H11V19C11 19.2652 11.1054 19.5196 11.2929 19.7071C11.4804 19.8946 11.7348 20 12 20C12.2652 20 12.5196 19.8946 12.7071 19.7071C12.8946 19.5196 13 19.2652 13 19V13H19C19.2652 13 19.5196 12.8946 19.7071 12.7071C19.8946 12.5196 20 12.2652 20 12C20 11.7348 19.8946 11.4804 19.7071 11.2929C19.5196 11.1054 19.2652 11 19 11Z" fill="#FDFEFF"/>
                         </svg>
-                        <span class="font-semibold text-20px">
+                        <span class="font-semibold md:text-20px">
                             New Service
                         </span>
                     </button>
@@ -285,27 +278,4 @@
 
         </div>
     </div>
-{% endblock %}
-
-{% block script %}
-    <script>
-        {# dropdown function #}
-        function drop(el) {
-            let dropdowns = document.getElementsByClassName('dropdown-content');
-
-            let table = document.getElementById('table');
-
-            let thisDropdown = el.nextSibling.nextSibling;
-            
-            if (!thisDropdown.classList.contains('show')) {
-                table.classList.add('overflow-x-auto');
-                for (var i = 0; i < dropdowns.length; i++) {
-                    dropdowns[i].classList.remove('show');
-                }
-            }
-            
-            thisDropdown.classList.toggle('show');
-            table.classList.toggle('overflow-x-auto');
-        }
-    </script>
 {% endblock %}
