@@ -61,10 +61,10 @@
         @apply hidden md:block font-semibold md:text-14px lg:text-16px text-black-100 md:ml-24px lg:ml-32px;
     }
     .nav-kanoo-link-login {
-        @apply h-32px sm:h-40px sm:w-136px inline-flex-col-center font-semibold text-14px md:text-16px text-white-90 md:text-oren-100 bg-oren-100 md:bg-white-90 sm:border border-oren-100 rounded-4px px-3 sm:px-0 sm:ml-32px;
+        @apply h-32px sm:h-40px sm:w-136px inline-flex-col-center font-semibold text-14px md:text-16px text-white-90 md:text-meja-100 bg-meja-100 md:bg-white-90 sm:border border-meja-100 rounded-4px px-3 sm:px-0 sm:ml-32px;
     }
     .nav-kanoo-link-form {
-        @apply h-40px w-136px hidden md:inline-flex-col-center font-semibold text-16px text-white-90 bg-oren-100 rounded-4px ml-32px;
+        @apply h-40px w-136px hidden md:inline-flex-col-center font-semibold text-16px text-white-90 bg-meja-100 rounded-4px ml-32px;
     }
     .nav-left-kanoo {
         @apply w-8/12 h-full py-8 px-5 bg-white-90 fixed z-110 transform -translate-x-full transition duration-300 ease-in-out;
@@ -73,7 +73,7 @@
         @apply block font-semibold text-16px text-black-100 mb-12px;
     }
     .nav-left-kanoo-link-text-login {
-        @apply inline-flex-col-center h-40px w-2/3 bg-oren-100 font-semibold text-16px text-center text-white-90 rounded-4px;
+        @apply inline-flex-col-center h-40px w-2/3 bg-meja-100 font-semibold text-16px text-center text-white-90 rounded-4px;
     }
     .footer-kanoo {
         @apply bg-black-3;
@@ -97,7 +97,7 @@
         @apply font-semibold text-16px text-black-50;
     }
     .footer-kanoo-link-selengkapnya {
-        @apply font-semibold text-16px md:text-20px text-oren-100;
+        @apply font-semibold text-16px md:text-20px text-meja-100;
     }
 }
 

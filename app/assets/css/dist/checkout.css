@@ -1,6 +1,6 @@
 #nav {
     width: 100%;
-    position: fixed;
+    position: static;
     background-color: #FDFEFF;
     z-index: 50;
 }
@@ -34,7 +34,7 @@
 }
 
 #article-container {
-    width: calc(100% - 407px);
+    width: calc(100% - 387px);
     padding-right: 30px;
 }
 #article-container .article-list {
@@ -98,7 +98,7 @@
 #article-container .article-list-ubah-pesanan {
     font-weight: 700;
     font-size: 14px;
-    color: #FF8845;
+    color: #EA3AA1;;
     text-decoration: underline;
 }
 #article-container .article-list-qty {
@@ -147,7 +147,7 @@
     #article-container {
         width: 100%;
         padding-right: 0px;
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
     #article-container .article-list {
         padding-bottom: 24px;
@@ -184,7 +184,7 @@
 
 
 #aside {
-    width: 407px;
+    width: 387px;
     background-color: #FDFEFF;
     padding: 24px;
     border: 1px solid #BBBCBD;
@@ -193,14 +193,15 @@
 }
 #aside .aside-title {
     font-weight: bold;
+    font-size: 24px;
     color: #222222;
 }
 #aside .aside-subtitle {
-    font-size: 24px;
+    font-size: 16px;
 }
 #aside .aside-button {
     width: 100%;
-    background-color: #FF8845;
+    background-color: #EA3AA1;;
     padding: 12px;
     border-radius: 4px;
     font-weight: 600;

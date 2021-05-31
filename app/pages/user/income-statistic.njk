@@ -1,5 +1,5 @@
 {% set title = 'Income Statistic' %}
-{% extends 'nav-login-freelance.njk' %}
+{% extends "user-dashboard.njk" %}
 
 {% block head %}
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -36,7 +36,7 @@
             </svg>
             <span class="ml-4 font-semibold md:text-24px text-black-100">1 April - 20 April 2021</span>
         </div>
-        
+
         <div class="mb-10">
             <div id="chart"></div>
         </div>
@@ -115,68 +115,101 @@
 
     <script>
         var options = {
-        series: [
-          {
-            name: 'Nama 1',
-            data: [10, 25, 25, 17, 17, 30, 30, 23, 23]
-          },
-          {
-            name: 'Nama 2',
-            data: [5, 15, 15, 10, 10, 18, 18, 6, 6]
-          },
-        ],
-        chart: {
-          type: 'area',
-          height: 500,
-          toolbar: {
-              show: false
-          },
-          stacked: true,
-        },
-        colors: ['#EA3AA1', '#D9BF3F'],
-        fill: {
-          colors: ['#D6FFF3']
-        },
-        stroke: {
-          curve: 'straight',
-          width: 2.5
-        },
-        dataLabels: {
-          enabled: false
-        },
-        legend: {
-          show: false
-        },
-        yaxis: {
-          labels: {
-            align: 'left',
-            style: {
-                colors: '#8F9090',
-                fontSize: '16px',
-                fontFamily: 'Inter'
+            series: [
+                {
+                    name: 'Nama 1',
+                    data: [
+                        10,
+                        25,
+                        25,
+                        17,
+                        17,
+                        30,
+                        30,
+                        23,
+                        23
+                    ]
+                }, {
+                    name: 'Nama 2',
+                    data: [
+                        5,
+                        15,
+                        15,
+                        10,
+                        10,
+                        18,
+                        18,
+                        6,
+                        6
+                    ]
+                }
+            ],
+            chart: {
+                type: 'area',
+                height: 500,
+                toolbar: {
+                    show: false
+                },
+                stacked: true
             },
-            formatter: (value) => { return '$'+value*1000 }
-          }
-        },
-        xaxis: {
-          categories: ['Apr 01', 'Apr 02', 'Apr 03', 'Apr 04', 'Apr 05', 'Apr 05', 'Apr 07', 'Apr 08', 'Apr 09'],
-          labels: {
-            style: {
-                colors: '#8F9090',
-                fontSize: '16px',
-                fontFamily: 'Inter',
+            colors: [
+                '#EA3AA1', '#D9BF3F'
+            ],
+            fill: {
+                colors: ['#D6FFF3']
             },
-            offsetY: 6,
-          },
-          title: {
-              offsetX: 30
-          },
-        },
-        markers: {
-          hover: {
-            sizeOffset: 4
-          }
-        }
+            stroke: {
+                curve: 'straight',
+                width: 2.5
+            },
+            dataLabels: {
+                enabled: false
+            },
+            legend: {
+                show: false
+            },
+            yaxis: {
+                labels: {
+                    align: 'left',
+                    style: {
+                        colors: '#8F9090',
+                        fontSize: '16px',
+                        fontFamily: 'Inter'
+                    },
+                    formatter: (value) => {
+                        return '$' + value * 1000
+                    }
+                }
+            },
+            xaxis: {
+                categories: [
+                    'Apr 01',
+                    'Apr 02',
+                    'Apr 03',
+                    'Apr 04',
+                    'Apr 05',
+                    'Apr 05',
+                    'Apr 07',
+                    'Apr 08',
+                    'Apr 09'
+                ],
+                labels: {
+                    style: {
+                        colors: '#8F9090',
+                        fontSize: '16px',
+                        fontFamily: 'Inter'
+                    },
+                    offsetY: 6
+                },
+                title: {
+                    offsetX: 30
+                }
+            },
+            markers: {
+                hover: {
+                    sizeOffset: 4
+                }
+            }
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);

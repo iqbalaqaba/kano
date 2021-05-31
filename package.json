@@ -1,5 +1,4 @@
 {
-  "homepage": ".",
   "name": "teamup-landing",
   "license": "MIT",
   "dependencies": {
@@ -19,4 +18,3 @@
   },
   "version": "1.0.0"
 }
-
