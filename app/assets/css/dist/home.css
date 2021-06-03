@@ -637,9 +637,10 @@
 }
 
 #freelance-list {
-    /*background-color: #D9BF3F;
-    margin-top: 80px;*/
-    padding: 80px 0px 0px;
+    background-color: #D9BF3F;
+    margin-top: 80px 0px;
+    padding: 80px 0px;
+    color: white;
 }
 
 #freelance-list .row-flex-kanoo {
@@ -648,7 +649,7 @@
 }
 
 #freelance-list .section-title {
-    /*color: #FDFEFF;*/
+    color: #FDFEFF;
 }
 
 #freelance-list .section-title-link {
@@ -1128,7 +1129,7 @@
 
 #cari-service-section {
     background-color: #FDFEFF;
-    padding: 80px 0px;
+    padding: 40px 0px 0px;
 }
 
 #cari-service-section .row-block-kanoo {
