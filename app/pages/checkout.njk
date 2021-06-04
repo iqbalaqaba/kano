@@ -2,9 +2,19 @@
 {% set title = 'Kanno - Checkout' %}
 {% set style = 'checkout' %}
 {% set script = 'checkout' %}
-{% extends "checkout.njk" %}
+{% extends "landing-page.njk" %}
 
 {% block content %}
+    <!-- NAV -->
+    <nav id="nav-checkout">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo h-80px md:h-96px lg:h-144px">
+                <div class="w-full text-center">
+                    <h1 class="nav-title text-20px sm:text-24px md:text-28px lg:text-32px">Checkout Details</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- SECTION -->
     <section id="section">
         <div class="container-kanoo">
@@ -158,6 +168,4 @@
             </div>
         </div>
     </main>
- 
-
 {% endblock %}
